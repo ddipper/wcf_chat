@@ -79,7 +79,7 @@ namespace ChatClient
         public void MsgCallBack(string msg)
         {
             lbChat.Items.Add(msg);
-            //lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count - 1]);
+            lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count - 1]);
         }
     }
 }
