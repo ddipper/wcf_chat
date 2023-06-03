@@ -35,8 +35,8 @@ namespace wcf_chat
             var user = users.FirstOrDefault(i => i.Id == id);
             if (user != null)
             {
-                users.Remove(user);
                 SendMsg($" {user.Name} disconnect :(", 0);
+                users.Remove(user);
             }
         }
 
